@@ -46,7 +46,7 @@ class ValuteList {
                     <tr class="valute_list__header">
                         <th>Код</th>
                         <th>Курс ЦБ РФ</th>
-                        <th>Изиение за день</th>
+                        <th>Изменение за день</th>
                     </tr>
                     ${tableBody}
                     

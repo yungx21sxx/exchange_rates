@@ -92,7 +92,7 @@ export class ValuteInfo {
                     <tr class="modal_list__header">
                         <th>Дата</th>
                         <th>Курс ЦБ РФ</th>
-                        <th>Изиение за день</th>
+                        <th>Изменение за день</th>
                     </tr>
                     ${modalListHTML}
                     
