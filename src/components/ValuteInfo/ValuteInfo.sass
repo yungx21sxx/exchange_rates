@@ -1,0 +1,98 @@
+@import "../App/App"
+
+.modal
+  display: none
+  z-index: 10
+  &__overlay
+
+    position: fixed
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    background: rgba(0,0,0,.5)
+    display: flex
+
+  &__body
+    background: white
+    margin: auto
+    width: 700px
+    height: 400px
+    overflow-y: scroll
+
+  &__header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-bottom: 1px solid #dddddd
+    background: rgb(239, 241, 245)
+
+
+  &__change_mod
+    display: flex
+
+  &__mod_tab
+    padding: 7px 13px
+    cursor: pointer
+    transition: .3s ease
+    &:hover, &.active
+      background: rgb(217, 218, 225)
+
+
+  &__close_btn
+    border: 0
+    background: none
+    font-size: 1.2em
+    margin-right: 5px
+    cursor: pointer
+
+  &__chart
+    padding: 10px
+
+  &__list
+    display: none
+
+
+
+.modal_list
+
+  &__table
+    width: 100%
+    margin-bottom: 20px
+    border: 1px solid $border-color
+    border-collapse: collapse
+    text-align: center
+
+  &__header
+
+    background: $bg-color
+
+    th
+      font-weight: bold
+
+      padding: 5px
+      border: 1px solid $border-color
+
+
+  &__item
+    td
+      border: 1px solid $border-color
+      padding: 5px
+      position: relative
+
+      &.fell
+        color: red
+
+      &.grown
+        color: green
+
+      .tooltip
+        display: none
+
+
+
+
+
+
+
+

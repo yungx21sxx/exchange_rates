@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="valute_list" class="valute_list"></div>
+    <div class="modal">
+        <div class="modal__overlay" data-type="close">
+            <div class="modal__body">
+                <div class="modal__header">
+                    <div class="modal__change_mod">
+                        <div class="modal__plot_mod modal__mod_tab active" data-type="plot-mod">График</div>
+                        <div class="modal__list_mod modal__mod_tab" data-type="list-mod">Список</div>
+                    </div>
+                    <button class="modal__close_btn" data-type="close">X</button>
+                </div>
+                <canvas id="modal__chart" class="modal__chart"></canvas>
+                <div class="modal__list"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="../index.js"></script>
+</body>
+</html>

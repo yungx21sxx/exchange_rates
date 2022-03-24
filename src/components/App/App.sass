@@ -1,0 +1,67 @@
+$border-color: #dddddd
+$bg-color: rgb(239, 241, 245)
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap')
+body
+  font-family: 'Roboto', sans-serif
+
+
+.valute_list
+  width: 700px
+  margin: 0 auto
+  &__table
+    width: 100%
+    margin-bottom: 20px
+    border: 1px solid $border-color
+    border-collapse: collapse
+    text-align: center
+
+  &__header
+
+    background: $bg-color
+
+    th
+      font-weight: bold
+
+      padding: 5px
+      border: 1px solid $border-color
+
+
+  &__item
+    td
+      border: 1px solid $border-color
+      padding: 5px
+      position: relative
+
+      &.fell
+        color: red
+
+      &.grown
+        color: green
+
+      .tooltip
+        display: none
+
+
+
+    &:hover
+      background: #efefef
+      transition: .3s ease
+
+      .tooltip
+        box-shadow: 3px 3px 10px gray
+
+        display: block
+        padding: 5px
+        position: absolute
+        background: white
+
+
+        z-index: 10
+        border-radius: 5px
+
+        border: 1px solid $border-color
+
+
+
+
